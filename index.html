@@ -3,30 +3,91 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Our Portfolio Site</title>
+  <meta name="theme-color" content="#eaf6fb">
+  <meta name="description" content="A shared home for our group's journals, builds, and ideas.">
+  <title>Frostline | Our Group</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
 
   <header class="site-header">
-    <p class="site-title"><a href="index.html">Our Portfolio Site</a></p>
+    <p class="site-title"><a href="index.html">Frostline <span aria-hidden="true">✳</span></a></p>
     <nav aria-label="Main">
       <ul>
-        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="#home" aria-current="page">Home</a></li>
+        <li><a href="#journals">Journals</a></li>
+        <li><a href="#builds">Builds</a></li>
+        <li><a href="#team">Our team</a></li>
       </ul>
     </nav>
   </header>
 
   <main id="main">
-    <h1>Welcome</h1>
-    <p>This is your group's starter site. Nothing here is final.</p>
-    <p>Fill in your planning Doc, then leave a comment that starts with
-      <code>@agent build</code> to have the agent replace this page with your own.</p>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">A student group · six perspectives</p>
+        <h1 id="hero-title">Ideas take shape<br><span>on thin ice.</span></h1>
+        <p class="hero-intro">Welcome to our shared studio: a place to document what we’re learning, show what we’re making, and see how each idea evolves.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#journals">Explore the journals <span aria-hidden="true">↓</span></a>
+          <a class="text-link" href="#builds">See what we’re building <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <div class="ice-art" aria-hidden="true">
+        <span class="ice-orbit orbit-one"></span>
+        <span class="ice-orbit orbit-two"></span>
+        <span class="ice-core">✳</span>
+        <span class="ice-label">THINK<br>MAKE<br>REFLECT</span>
+      </div>
+      <div class="hero-note"><span class="note-mark" aria-hidden="true">✳</span><span>Six makers, one shared space.<br><strong>Always in progress.</strong></span></div>
+    </section>
+
+    <section class="intro-strip" aria-label="About this space">
+      <p>Our work, as it happens.</p>
+      <p>Notes from the process. Builds from the bench. A little progress, every day.</p>
+    </section>
+
+    <section class="content-section" id="journals" aria-labelledby="journals-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">Field notes · 01</p><h2 id="journals-title">The journals</h2></div>
+        <p class="section-description">Small observations, new questions, and lessons picked up along the way.</p>
+      </div>
+      <div class="member-grid">
+        <article class="entry-card"><span class="card-number">01</span><p class="card-label">Journal</p><h3>Member 1</h3><p>Add a journal entry, reflection, or note from your process here.</p></article>
+        <article class="entry-card"><span class="card-number">02</span><p class="card-label">Journal</p><h3>Member 2</h3><p>Add a journal entry, reflection, or note from your process here.</p></article>
+        <article class="entry-card"><span class="card-number">03</span><p class="card-label">Journal</p><h3>Member 3</h3><p>Add a journal entry, reflection, or note from your process here.</p></article>
+        <article class="entry-card"><span class="card-number">04</span><p class="card-label">Journal</p><h3>Member 4</h3><p>Add a journal entry, reflection, or note from your process here.</p></article>
+        <article class="entry-card"><span class="card-number">05</span><p class="card-label">Journal</p><h3>Member 5</h3><p>Add a journal entry, reflection, or note from your process here.</p></article>
+        <article class="entry-card"><span class="card-number">06</span><p class="card-label">Journal</p><h3>Member 6</h3><p>Add a journal entry, reflection, or note from your process here.</p></article>
+      </div>
+    </section>
+
+    <section class="content-section builds-section" id="builds" aria-labelledby="builds-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">Works in progress · 02</p><h2 id="builds-title">From the workbench</h2></div>
+        <p class="section-description">Experiments, prototypes, and finished builds. Every version has a story.</p>
+      </div>
+      <div class="member-grid">
+        <article class="entry-card build-card"><span class="card-number">01</span><p class="card-label">Build</p><h3>Member 1</h3><p>Share a project title, what you’re making, and what you’ve learned so far.</p></article>
+        <article class="entry-card build-card"><span class="card-number">02</span><p class="card-label">Build</p><h3>Member 2</h3><p>Share a project title, what you’re making, and what you’ve learned so far.</p></article>
+        <article class="entry-card build-card"><span class="card-number">03</span><p class="card-label">Build</p><h3>Member 3</h3><p>Share a project title, what you’re making, and what you’ve learned so far.</p></article>
+        <article class="entry-card build-card"><span class="card-number">04</span><p class="card-label">Build</p><h3>Member 4</h3><p>Share a project title, what you’re making, and what you’ve learned so far.</p></article>
+        <article class="entry-card build-card"><span class="card-number">05</span><p class="card-label">Build</p><h3>Member 5</h3><p>Share a project title, what you’re making, and what you’ve learned so far.</p></article>
+        <article class="entry-card build-card"><span class="card-number">06</span><p class="card-label">Build</p><h3>Member 6</h3><p>Share a project title, what you’re making, and what you’ve learned so far.</p></article>
+      </div>
+    </section>
+
+    <section class="team-banner" id="team" aria-labelledby="team-title">
+      <p class="eyebrow">The people behind the process</p>
+      <h2 id="team-title">Six voices. Room to experiment.</h2>
+      <p>Replace the member labels with your names, then make this space your own. Add journal entries, project details, and links as your work grows.</p>
+      <a class="text-link" href="#home">Back to the top <span aria-hidden="true">↑</span></a>
+    </section>
   </main>
 
   <footer class="site-footer">
-    <p>Built by our group with help from an AI agent.</p>
+    <p>Made together, one idea at a time. <span aria-hidden="true">✳</span></p>
   </footer>
 </body>
 </html>
