@@ -1,10 +1,12 @@
 :root {
-  --text: #1f2933;
-  --muted: #52606d;
-  --background: #fdfcf9;
-  --accent: #1d5fa8;
-  --border: #d9d4c7;
-  --max-width: 46rem;
+  --text: #102b3b;
+  --muted: #456274;
+  --background: #f1f8fb;
+  --accent: #145b78;
+  --border: #c8dfe9;
+  --max-width: 76rem;
+  --ice: #dff1f7;
+  --deep-ice: #b9dfec;
 }
 
 *,
@@ -94,4 +96,449 @@ video {
   top: 1rem;
   padding: 0.5rem 0.75rem;
   background: var(--background);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 1rem;
+}
+
+body {
+  background: linear-gradient(180deg, #f7fcfe 0%, #edf7fa 48%, #f7fbfc 100%);
+}
+
+.site-header {
+  max-width: 82rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-color: transparent;
+}
+
+.site-title {
+  font-size: 1.15rem;
+  letter-spacing: -0.03em;
+}
+
+.site-title a span {
+  color: var(--accent);
+  font-size: 1.25em;
+}
+
+nav a {
+  font-size: 0.95rem;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+nav a:hover,
+.text-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+main {
+  padding-top: 0.5rem;
+}
+
+.hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(18rem, 0.9fr);
+  align-items: center;
+  gap: 2rem;
+  min-height: 31rem;
+  overflow: hidden;
+  padding: clamp(2rem, 6vw, 5rem);
+  border: 1px solid #d5e9f0;
+  border-radius: 1.5rem;
+  background: linear-gradient(115deg, #f9fdff 5%, #e3f3f8 60%, #c9e7f1 100%);
+  box-shadow: 0 1.5rem 4rem rgba(28, 82, 105, 0.08);
+}
+
+.hero-copy {
+  position: relative;
+  z-index: 1;
+}
+
+.eyebrow,
+.card-label {
+  margin: 0 0 0.75rem;
+  color: #285b70;
+  font-size: 0.75rem;
+  font-weight: 750;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(3rem, 7vw, 5.8rem);
+  letter-spacing: -0.075em;
+  line-height: 0.99;
+}
+
+.hero h1 span {
+  color: #286a85;
+}
+
+.hero-intro {
+  max-width: 35rem;
+  margin: 1.5rem 0 0;
+  color: #385769;
+  font-size: 1.08rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.5rem;
+  margin-top: 2rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  min-height: 3rem;
+  padding: 0.75rem 1.1rem;
+  border-radius: 0.4rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.button-primary {
+  color: #fff;
+  background: #145b78;
+}
+
+.button-primary:hover {
+  background: #0c435b;
+}
+
+.text-link {
+  font-weight: 700;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.ice-art {
+  position: relative;
+  display: grid;
+  width: min(100%, 25rem);
+  aspect-ratio: 1;
+  place-items: center;
+  justify-self: center;
+  border: 1px solid rgba(48, 111, 137, 0.22);
+  border-radius: 50%;
+  background: radial-gradient(circle at 42% 38%, rgba(255, 255, 255, 0.95), rgba(183, 222, 235, 0.35) 58%, rgba(116, 177, 198, 0.16));
+  box-shadow: inset 0 0 3rem rgba(255, 255, 255, 0.75), 0 1.5rem 3rem rgba(39, 100, 123, 0.12);
+}
+
+.ice-orbit {
+  position: absolute;
+  width: 78%;
+  height: 78%;
+  border: 1px solid rgba(27, 91, 116, 0.27);
+  border-radius: 50%;
+  transform: rotate(-35deg) scaleY(0.48);
+}
+
+.orbit-two {
+  transform: rotate(55deg) scaleY(0.48);
+}
+
+.ice-core {
+  color: #145b78;
+  font-size: clamp(5rem, 13vw, 9rem);
+  line-height: 1;
+  text-shadow: 0 0.2rem 1.5rem rgba(255, 255, 255, 0.9);
+}
+
+.ice-label {
+  position: absolute;
+  right: 0;
+  bottom: 8%;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid rgba(31, 88, 110, 0.22);
+  border-radius: 0.35rem;
+  color: #244d60;
+  background: rgba(248, 253, 255, 0.86);
+  font-size: 0.66rem;
+  font-weight: 750;
+  letter-spacing: 0.12em;
+  line-height: 1.55;
+}
+
+.hero-note {
+  position: absolute;
+  right: 2rem;
+  bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: #385769;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.note-mark {
+  color: #145b78;
+  font-size: 1.5rem;
+}
+
+.intro-strip {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 2.5rem 0 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.intro-strip p:first-child {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 750;
+  letter-spacing: -0.02em;
+}
+
+.intro-strip p:last-child {
+  max-width: 34rem;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.content-section {
+  padding: 5rem 0 1rem;
+  scroll-margin-top: 1rem;
+}
+
+.section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-heading h2,
+.team-banner h2 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -0.055em;
+  line-height: 1.1;
+}
+
+.section-heading .eyebrow {
+  margin-bottom: 0.6rem;
+}
+
+.section-description {
+  max-width: 28rem;
+  margin: 0 0 0.25rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.member-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.entry-card {
+  position: relative;
+  min-height: 12rem;
+  padding: 1.4rem;
+  border: 1px solid #d4e4ea;
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0.5rem 1.5rem rgba(22, 68, 87, 0.04);
+}
+
+.entry-card:hover {
+  border-color: #9fc9d8;
+  box-shadow: 0 0.8rem 2rem rgba(22, 68, 87, 0.09);
+}
+
+.card-number {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.35rem;
+  color: #577584;
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.card-label {
+  margin-bottom: 1rem;
+  font-size: 0.67rem;
+}
+
+.entry-card h3 {
+  margin: 0 0 0.6rem;
+  font-size: 1.25rem;
+  letter-spacing: -0.035em;
+}
+
+.entry-card > p:last-child {
+  max-width: 23rem;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.builds-section {
+  padding-top: 5.5rem;
+}
+
+.build-card {
+  background: linear-gradient(145deg, #fff, #f1f9fb);
+}
+
+.team-banner {
+  margin: 5rem 0 2rem;
+  padding: clamp(2rem, 5vw, 3.5rem);
+  border-radius: 1rem;
+  color: #f4fbfd;
+  background: linear-gradient(115deg, #173f53, #205e76);
+  scroll-margin-top: 1rem;
+}
+
+.team-banner .eyebrow {
+  color: #c2e6f0;
+}
+
+.team-banner h2 {
+  max-width: 42rem;
+}
+
+.team-banner > p:not(.eyebrow) {
+  max-width: 42rem;
+  color: #e0f0f5;
+}
+
+.team-banner .text-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #fff;
+}
+
+.site-footer {
+  max-width: 82rem;
+  color: #456274;
+  border-color: var(--border);
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+:focus-visible {
+  outline: 3px solid #124e68;
+  outline-offset: 3px;
+}
+
+@media (max-width: 760px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    min-height: auto;
+    padding-bottom: 5rem;
+  }
+
+  .ice-art {
+    width: min(72%, 18rem);
+    margin: 1rem auto 0;
+  }
+
+  .hero-note {
+    right: 1.5rem;
+    bottom: 1rem;
+  }
+
+  .section-heading {
+    display: block;
+  }
+
+  .section-description {
+    margin-top: 0.8rem;
+  }
+
+  .member-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .site-header,
+  main,
+  .site-footer {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .site-header {
+    align-items: center;
+  }
+
+  nav ul {
+    gap: 0.8rem;
+  }
+
+  nav a {
+    font-size: 0.85rem;
+  }
+
+  .hero {
+    padding: 2rem 1.4rem 5rem;
+    border-radius: 1rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.8rem, 14vw, 4rem);
+  }
+
+  .hero-actions {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .intro-strip {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .content-section,
+  .builds-section {
+    padding-top: 3.5rem;
+  }
+
+  .member-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .entry-card {
+    min-height: 10rem;
+  }
+
+  .team-banner {
+    margin-top: 3.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
