@@ -643,3 +643,13 @@ main > .content-section,main > .team-banner {max-width:76rem;margin-left:auto;ma
 .essay-page .person-heading h1{font-size:clamp(3rem,7vw,5.5rem);}
 .essay-body{max-width:49rem;margin:2.5rem auto 4rem;padding:clamp(1.3rem,4vw,3rem);background:#f4f8fa;color:#173148;border-radius:.75rem;box-shadow:0 12px 40px rgba(0,0,0,.2);}
 .essay-body p{font-family:Georgia,"Times New Roman",serif;font-size:1.1rem;line-height:1.9;margin:0 0 1.35rem;overflow-wrap:break-word;}
+
+/* Emily and the meaning of Frostline */
+.emily-theme{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(15rem,.7fr);gap:clamp(1.5rem,5vw,4rem);align-items:center;margin:3.5rem auto;padding:clamp(1.5rem,4vw,3.5rem);border:1px solid #c7e4ef;border-radius:1.25rem;background:linear-gradient(130deg,#f8fdff,#dceef6);box-shadow:0 1rem 3rem rgba(31,85,112,.07)}
+.emily-theme h2{font-size:clamp(2rem,4vw,3.5rem);line-height:1.12;margin:.3rem 0 1.4rem;letter-spacing:-.04em;color:#123b51}
+.emily-theme-copy>p:not(.eyebrow){max-width:44rem;color:#294d62;line-height:1.8}
+.emily-theme-tagline{font-size:.85rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin-top:1.7rem}
+.emily-theme-photo{margin:0;position:relative}
+.emily-theme-photo img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center;border-radius:.9rem;box-shadow:0 1.25rem 2.5rem rgba(20,53,74,.2);filter:saturate(.72)}
+.emily-theme-photo figcaption{margin-top:.65rem;font-size:.78rem;color:#3e6476;line-height:1.4}
+@media(max-width:700px){.emily-theme{grid-template-columns:1fr}.emily-theme-photo{max-width:24rem}.emily-theme-photo img{aspect-ratio:4/3}}
