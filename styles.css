@@ -624,3 +624,13 @@ main > .content-section,main > .team-banner {max-width:76rem;margin-left:auto;ma
 .journal-timeline .work-card::before{content:"";position:absolute;left:calc(-2rem - 8px);top:2rem;width:14px;height:14px;border-radius:50%;background:#72e8ff;box-shadow:0 0 0 5px #0b314d;}
 .return-link{margin-top:3rem;}
 @media(max-width:520px){.work-card{padding:1.2rem}.person-main{padding-left:1rem;padding-right:1rem}}
+
+
+/* Individual member biographies */
+.profile-bio{margin-top:2.2rem;padding:1.5rem 1.75rem;border:1px solid #41738b;border-radius:1rem;background:linear-gradient(125deg,rgba(22,73,105,.92),rgba(9,38,65,.94));max-width:48rem;}
+.profile-bio h2{font-size:clamp(1.4rem,3vw,2rem);margin:0 0 1.2rem;color:#fff;}
+.profile-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem 2rem;margin:0;}
+.profile-facts div:last-child{grid-column:1/-1;}
+.profile-facts dt{font-size:.75rem;text-transform:uppercase;letter-spacing:.12em;font-weight:700;color:#87e5ff;margin-bottom:.3rem;}
+.profile-facts dd{margin:0;color:#f2fbff;font-size:1.05rem;line-height:1.5;}
+@media(max-width:520px){.profile-facts{grid-template-columns:1fr}.profile-facts div:last-child{grid-column:auto}}
