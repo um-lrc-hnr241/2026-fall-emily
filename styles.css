@@ -655,3 +655,18 @@ main > .content-section,main > .team-banner {max-width:76rem;margin-left:auto;ma
 @media(max-width:700px){.emily-theme{grid-template-columns:1fr}.emily-theme-photo{max-width:24rem}.emily-theme-photo img{aspect-ratio:4/3}}
 
 .hero-team-name{display:inline-block;margin:1.1rem 0 0;padding:.42rem 1.05rem;border:1px solid rgba(232,249,255,.65);border-radius:999px;color:#fff;background:rgba(12,49,73,.52);font-size:.82rem;font-weight:850;letter-spacing:.22em;text-transform:uppercase;backdrop-filter:blur(8px)}
+
+
+/* Five interactive ice cubes on the homepage */
+.ice-cube-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:clamp(.75rem,1.7vw,1.5rem);padding:2.25rem .2rem 2.5rem;perspective:1000px}
+.ice-cube{isolation:isolate;position:relative;display:flex;min-height:clamp(10rem,16vw,14.5rem);flex-direction:column;align-items:center;justify-content:center;gap:.6rem;overflow:hidden;padding:1rem;text-align:center;text-decoration:none;color:#103f58;border:1px solid rgba(204,249,255,.9);border-radius:20%;background:linear-gradient(138deg,rgba(255,255,255,.96) 0%,rgba(205,245,255,.9) 23%,rgba(126,204,231,.83) 67%,rgba(59,146,191,.78) 100%);box-shadow:inset 8px 8px 18px rgba(255,255,255,.94),inset -9px -12px 19px rgba(23,98,139,.3),8px 15px 22px rgba(19,92,128,.2),0 0 0 5px rgba(204,238,249,.12);transform:rotate(-3deg);transition:transform .25s ease,box-shadow .25s ease}
+.ice-cube:nth-child(even){transform:rotate(3deg)}.ice-cube:nth-child(3){transform:rotate(-1deg)}
+.ice-cube::before{content:"";position:absolute;inset:8%;border:1px solid rgba(255,255,255,.55);border-radius:16%;transform:skew(-4deg);pointer-events:none}
+.ice-cube::after{content:"";position:absolute;inset:0;background:linear-gradient(148deg,rgba(255,255,255,.8) 0%,transparent 30%,transparent 66%,rgba(10,86,129,.16) 100%);pointer-events:none}
+.ice-cube-shine{position:absolute;top:-35%;left:-30%;width:110%;height:70%;transform:rotate(-32deg);background:rgba(255,255,255,.38);filter:blur(15px);pointer-events:none}
+.ice-cube-number,.ice-cube-title,.ice-cube-prompt{position:relative;z-index:1}.ice-cube-number{font-size:.75rem;font-weight:800;letter-spacing:.23em;opacity:.72}.ice-cube-title{font-size:clamp(1.15rem,2.3vw,2rem);font-weight:900;letter-spacing:-.04em;line-height:1.1;text-shadow:0 1px 1px rgba(255,255,255,.9)}.ice-cube-prompt{font-size:.62rem;font-weight:800;letter-spacing:.1em}
+.ice-cube:hover,.ice-cube:focus-visible{transform:translateY(-12px) rotate(0deg) scale(1.035);box-shadow:inset 8px 8px 18px rgba(255,255,255,.94),inset -9px -12px 19px rgba(23,98,139,.3),10px 25px 35px rgba(19,92,128,.3)}
+.build-collection{min-height:65vh;padding-top:3rem;padding-bottom:5rem}.build-collection .section-heading{margin:2rem 0}.build-collection h1{font-size:clamp(2.5rem,6vw,5rem);margin:.3rem 0}.build-unavailable{opacity:.65}.build-unavailable p:last-child{font-size:.9rem}
+@media(max-width:980px){.ice-cube-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:600px){.ice-cube-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:1.1rem}.ice-cube{min-height:10.5rem}.ice-cube:last-child{grid-column:1/-1;width:calc(50% - .55rem);justify-self:center}.ice-cube-title{font-size:1.35rem}}
+@media(prefers-reduced-motion:reduce){.ice-cube{transition:none}.ice-cube:hover{transform:none}}
