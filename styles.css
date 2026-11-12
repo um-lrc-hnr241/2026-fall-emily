@@ -653,3 +653,5 @@ main > .content-section,main > .team-banner {max-width:76rem;margin-left:auto;ma
 .emily-theme-photo img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center;border-radius:.9rem;box-shadow:0 1.25rem 2.5rem rgba(20,53,74,.2);filter:saturate(.72)}
 .emily-theme-photo figcaption{margin-top:.65rem;font-size:.78rem;color:#3e6476;line-height:1.4}
 @media(max-width:700px){.emily-theme{grid-template-columns:1fr}.emily-theme-photo{max-width:24rem}.emily-theme-photo img{aspect-ratio:4/3}}
+
+.hero-team-name{display:inline-block;margin:1.1rem 0 0;padding:.42rem 1.05rem;border:1px solid rgba(232,249,255,.65);border-radius:999px;color:#fff;background:rgba(12,49,73,.52);font-size:.82rem;font-weight:850;letter-spacing:.22em;text-transform:uppercase;backdrop-filter:blur(8px)}
