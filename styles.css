@@ -542,3 +542,39 @@ main {
     scroll-behavior: auto;
   }
 }
+
+
+/* Frostline — dramatic fractured-ice redesign */
+:root { --background:#071b30; --text:#eafaff; --muted:#a8cad9; --accent:#5bdfff; --border:#31556b; }
+body { color:var(--text); background:radial-gradient(ellipse at 80% 12%,#16496a 0%,transparent 42%),linear-gradient(160deg,#061629 0%,#0a2b44 48%,#061827 100%); }
+.site-header {border-bottom:1px solid rgba(131,218,244,.25);}
+.site-title a,nav a {color:#e7faff;}
+.site-title a span {color:#6ceaff;}
+a {color:#83e9ff;}
+.hero {min-height:39rem; border:1px solid rgba(136,231,255,.36); background:radial-gradient(circle at 80% 45%,rgba(45,165,217,.28),transparent 48%),linear-gradient(115deg,#081e34 0%,#0b3453 58%,#071c32 100%);box-shadow:0 1.5rem 5rem rgba(0,0,0,.32),inset 0 0 4rem rgba(55,194,242,.06);}
+.hero::before {content:"";position:absolute;inset:0;pointer-events:none;opacity:.35;background:linear-gradient(132deg,transparent 35%,rgba(124,234,255,.2) 35.15%,transparent 35.5%),linear-gradient(45deg,transparent 68%,rgba(124,234,255,.18) 68.15%,transparent 68.4%);}
+.hero-copy {z-index:2;}
+.eyebrow,.card-label {color:#79dff4;}
+.hero h1 {color:#f0fcff;text-shadow:0 0 25px rgba(91,223,255,.15);}
+.hero h1 span {color:#70e5ff;}
+.course-title {max-width:37rem;margin:1.5rem 0 0;padding:.8rem 1rem;border-left:3px solid #6be7ff;background:rgba(102,218,255,.09);color:#e7fbff;font-weight:700;font-size:clamp(.92rem,1.6vw,1.12rem);line-height:1.55;}
+.course-divider {color:#5cd9f5;margin:0 .3rem;}
+.course-term {display:block;color:#95d6e9;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;margin-top:.2rem;}
+.hero-intro,.hero-note {color:#c5e3ee;}
+.button-primary {background:#74e4ff;color:#072037;}
+.button-primary:hover {background:#b2f3ff;}
+.ice-art {width:min(100%,32rem);border:0;border-radius:0;box-shadow:none;background:none;filter:drop-shadow(0 0 30px rgba(64,203,250,.45));}
+.ice-art img {display:block;width:100%;height:auto;animation:iceFloat 8s ease-in-out infinite;}
+.ice-label {background:rgba(5,27,46,.83);color:#d7faff;border-color:rgba(113,232,255,.6);right:3%;bottom:9%;}
+@keyframes iceFloat {0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-12px) rotate(1deg)}}
+.intro-strip {border-color:var(--border);}
+.intro-strip p:last-child,.section-description,.entry-card > p:last-child {color:#a9c8d8;}
+.entry-card {background:linear-gradient(150deg,rgba(21,62,87,.92),rgba(9,39,62,.96));border-color:#315c76;box-shadow:0 .5rem 1.5rem rgba(0,0,0,.12);}
+.entry-card:hover {border-color:#6adcf8;box-shadow:0 .8rem 2rem rgba(44,192,240,.12);}
+.build-card {background:linear-gradient(145deg,#123a55,#09263f);}
+.card-number {color:#94c4d7;}
+.team-banner {background:linear-gradient(115deg,#123b57,#0b2239);border:1px solid #39738d;}
+.site-footer {color:#a8cbd9;border-color:var(--border);}
+:focus-visible {outline-color:#9cecff;}
+@media(max-width:760px){.hero{min-height:auto}.ice-art{width:min(90%,23rem)}}
+@media(prefers-reduced-motion:reduce){.ice-art img{animation:none}}
