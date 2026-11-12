@@ -578,3 +578,20 @@ a {color:#83e9ff;}
 :focus-visible {outline-color:#9cecff;}
 @media(max-width:760px){.hero{min-height:auto}.ice-art{width:min(90%,23rem)}}
 @media(prefers-reduced-motion:reduce){.ice-art img{animation:none}}
+
+
+/* Full-screen fractured ice cover, inspired by the class reference */
+.site-header {position:relative;z-index:5;background:#06182a;max-width:none;padding-left:max(1.25rem,calc((100vw - 78rem)/2));padding-right:max(1.25rem,calc((100vw - 78rem)/2));}
+main {max-width:none;padding:0;}
+main > .content-section,main > .team-banner {max-width:76rem;margin-left:auto;margin-right:auto;}
+.hero.hero-fullbleed {isolation:isolate;position:relative;display:flex;align-items:center;justify-content:center;text-align:center;min-height:calc(100svh - 82px);width:100%;max-width:none;margin:0;padding:5rem 1.5rem;border:0;border-radius:0;overflow:hidden;background:#052444;box-shadow:none;}
+.hero.hero-fullbleed::before {content:"";position:absolute;inset:-15%;z-index:-2;background:radial-gradient(circle at 51% 47%,#e9ffff 0%,#a1edff 5%,#2686c3 12%,#07335f 27%,#04142b 65%),url("images/shattered-ice.svg") center/cover no-repeat;filter:saturate(1.35);opacity:1;}
+.hero.hero-fullbleed::after {content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(90deg,rgba(1,15,34,.72),rgba(1,23,49,.38) 45%,rgba(1,15,34,.66)),url("images/shattered-ice.svg") center center/cover no-repeat;mix-blend-mode:normal;}
+.hero-fullbleed .hero-copy {position:relative;z-index:2;max-width:62rem;padding:3rem clamp(1rem,4vw,4rem);border:1px solid rgba(170,240,255,.4);background:rgba(2,19,41,.58);box-shadow:0 0 80px rgba(3,23,47,.7),inset 0 0 45px rgba(67,185,230,.1);backdrop-filter:blur(7px);}
+.hero-fullbleed .eyebrow {color:#b9f1ff;letter-spacing:.25em;font-size:.85rem;}
+.hero-fullbleed h1 {font-size:clamp(4rem,12vw,10rem);line-height:1;letter-spacing:-.065em;color:#fff;text-shadow:0 0 30px #2e9dcb,0 3px 20px #00152e;margin:.5rem 0 1rem;}
+.hero-subtitle {font-size:clamp(1.6rem,4vw,3.5rem);line-height:1.2;letter-spacing:-.035em;font-weight:650;color:#e6faff;margin:0;}
+.hero-subtitle em {color:#9beaff;font-style:italic;}
+.hero-semester {font-size:.95rem;letter-spacing:.32em;font-weight:800;color:#b4f2ff;margin:2rem 0 0;}
+.team-list {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.7rem 2rem;max-width:40rem;padding-left:1.4rem;color:#e5faff;}
+@media(max-width:760px){.hero.hero-fullbleed{min-height:calc(100svh - 100px);padding:3rem 1rem}.hero-fullbleed .hero-copy{padding:2.5rem 1rem}.team-list{grid-template-columns:1fr}main > .content-section,main > .team-banner{margin-left:1rem;margin-right:1rem}}
