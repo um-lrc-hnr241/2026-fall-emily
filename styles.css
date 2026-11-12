@@ -634,3 +634,12 @@ main > .content-section,main > .team-banner {max-width:76rem;margin-left:auto;ma
 .profile-facts dt{font-size:.75rem;text-transform:uppercase;letter-spacing:.12em;font-weight:700;color:#87e5ff;margin-bottom:.3rem;}
 .profile-facts dd{margin:0;color:#f2fbff;font-size:1.05rem;line-height:1.5;}
 @media(max-width:520px){.profile-facts{grid-template-columns:1fr}.profile-facts div:last-child{grid-column:auto}}
+
+
+/* Readable full-text Build pages */
+.read-build{display:inline-block;margin-top:1rem;color:#84ebff;font-weight:750;text-decoration:underline;text-underline-offset:.2rem;}
+.read-build:hover{color:#fff;}
+.essay-page{max-width:64rem;}
+.essay-page .person-heading h1{font-size:clamp(3rem,7vw,5.5rem);}
+.essay-body{max-width:49rem;margin:2.5rem auto 4rem;padding:clamp(1.3rem,4vw,3rem);background:#f4f8fa;color:#173148;border-radius:.75rem;box-shadow:0 12px 40px rgba(0,0,0,.2);}
+.essay-body p{font-family:Georgia,"Times New Roman",serif;font-size:1.1rem;line-height:1.9;margin:0 0 1.35rem;overflow-wrap:break-word;}
