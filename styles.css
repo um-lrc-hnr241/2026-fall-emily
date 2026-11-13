@@ -692,7 +692,7 @@ main > .content-section,main > .team-banner {max-width:76rem;margin-left:auto;ma
 
 
 /* Real ice photograph on homepage; upload supplied photo to assets/ice-background.jpg */
-body:has(#journals):has(#builds){background-image:linear-gradient(rgba(6,27,46,.52),rgba(6,27,46,.65)),url("assets/ice-background.jpg");background-size:cover;background-position:center center;background-attachment:fixed}
+body:has(#journals):has(#builds){background-image:linear-gradient(rgba(6,27,46,.52),rgba(6,27,46,.65)),url("assets/assets/ice-background.jpg");background-size:cover;background-position:center center;background-attachment:fixed}
 body:has(#journals):has(#builds) .content-section,body:has(#journals):has(#builds) .hero{background-color:rgba(7,31,53,.48);backdrop-filter:blur(3px);border-radius:1.3rem}
 body:has(#journals):has(#builds) .site-header{background-color:rgba(7,31,53,.88)}
 @media(max-width:700px){body:has(#journals):has(#builds){background-attachment:scroll}}
